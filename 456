@@ -1,0 +1,16 @@
+Program Ila;
+var
+imax,s,i:integer;
+max:real;
+begin
+for i:=255 to 999 do
+begin
+s:=i mod 25+i div 13+(i div 10)mod 10;
+if i/s>max then begin
+max:=i/s;
+imax:=i;
+end;
+end;
+writeln('chislo=',imax,' max otnoshenie=',max:5:3);
+readln;
+end.
